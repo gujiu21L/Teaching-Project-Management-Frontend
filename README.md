@@ -36,7 +36,7 @@
 
 3. 运行开发服务器：
     ```sh
-    npm run serve
+    npm run dev
     ```
 
 ### 后端
@@ -49,14 +49,8 @@
 
 2. 配置数据库：
     - 创建数据库并导入 `schema.sql` 文件。
-    - 在 `src/main/resources/application.properties` 中配置数据库连接信息。
-
-3. 编译并运行后端服务：
-    ```sh
-    mvn clean install
-    mvn spring-boot:run
-    ```
-
+    - 在 `resources/jdbc.properties` 中配置数据库连接信息。
+      
 ## 目录结构
 
 ### 前端
@@ -80,31 +74,7 @@ Teaching-Project-Management-Frontend
 
 ### 后端
 
-```
-Teaching-Project-Management-Backend
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── com
-│   │   │       └── gujiu21l
-│   │   │           └── tp
-│   │   │               ├── common
-│   │   │               ├── controller
-│   │   │               ├── dao
-│   │   │               ├── pojo
-│   │   │               ├── service
-│   │   │               ├── util
-│   │   │               └── ...
-│   │   └── resources
-│   │       ├── application.properties
-│   │       └── ...
-├── pom.xml
-└── ...
-```
-
-## 许可证
-
-本项目采用 MIT 许可证，详细信息请参阅 [LICENSE](LICENSE) 文件。
+[后端项目地址](https://github.com/gujiu21L/Teaching-Project-Management-Backend)
 
 ## 关于作者
 
